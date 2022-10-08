@@ -54,7 +54,8 @@ if os.name == "nt":
 
 nvcc_flags = [
 	"-std=c++14",
-	"--extended-lambda",
+	# "--extended-lambda",
+	"--expt-extended-lambda",
 	"--expt-relaxed-constexpr",
 	# The following definitions must be undefined
 	# since TCNN requires half-precision operation.
